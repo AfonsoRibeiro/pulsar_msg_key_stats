@@ -11,12 +11,12 @@ RUN go mod download
 
 COPY src/ ./src/
 
-RUN go build -C src/main -o /app/pulsar_id_stats
+RUN go build -C src/main -o /app/pulsar_msg_key_stats
 
 FROM alpine:latest
 
 WORKDIR /app
 
-COPY --from=buildstage /app/pulsar_id_stats ./pulsar_id_stats
+COPY --from=buildstage /app/pulsar_msg_key_stats ./pulsar_msg_key_stats
 
-ENTRYPOINT [ "./pulsar_id_stats" ]
+ENTRYPOINT [ "./pulsar_msg_key_stats" ]

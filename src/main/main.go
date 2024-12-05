@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"pulsar_id_stats/src/stats"
+	"pulsar_msg_key_stats/src/stats"
 
 	"github.com/sirupsen/logrus"
 

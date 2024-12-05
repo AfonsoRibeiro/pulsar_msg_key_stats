@@ -1,5 +1,5 @@
-container_name="pulsar_id_stats"
-image_name="pulsar_id_stats"
+container_name="pulsar_msg_key_stats"
+image_name="pulsar_msg_key_stats"
 image_version="1.1.11"
 
 run_debug: build_go
@@ -43,5 +43,5 @@ start_pulsar:
 		-p 6650:6650 -p 8080:8080 apachepulsar/pulsar:latest bin/pulsar standalone
 
 clean:
-	rm pulsar_id_stats || \
+	rm pulsar_msg_key_stats || \
 	rm pprof/2023*

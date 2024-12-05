@@ -1,4 +1,4 @@
-module pulsar_id_stats
+module pulsar_msg_key_stats
 
 go 1.22
 

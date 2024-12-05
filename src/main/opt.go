@@ -30,7 +30,7 @@ func from_args() opt {
 	flag.StringVar(&opt.sourcepulsar, "source_pulsar", "pulsar://localhost:6650", "Source pulsar address")
 	flag.StringVar(&opt.sourcetopic, "source_topic", "persistent://public/default/in", "Source topic name")
 	flag.UintVar(&opt.sourcetopicnumberpartitions, "source_topic_number_partitions", 1, "Source topic number of partitions")
-	flag.StringVar(&opt.sourcesubscription, "source_subscription", "pulsar_id_stats", "Source subscription name")
+	flag.StringVar(&opt.sourcesubscription, "source_subscription", "pulsar_msg_key_stats", "Source subscription name")
 	flag.StringVar(&opt.sourcename, "source_name", "aggregator_consumer", "Source consumer name")
 	flag.StringVar(&opt.sourcetrustcerts, "source_trust_certs", "", "Path for source pem file, for ca.cert")
 	flag.StringVar(&opt.sourcecertfile, "source_cert_file", "", "Path for source cert.pem file")
