@@ -1,6 +1,6 @@
 container_name="pulsar_msg_key_stats"
 image_name="pulsar_msg_key_stats"
-image_version="1.1.11"
+image_version="0.0.1"
 
 run_debug: build_go
 	./${container_name} --log_level=debug --source_allow_insecure_connection=true

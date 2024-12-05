@@ -51,8 +51,6 @@ func monitor_partition(consumer pulsar.Consumer, consume_chan <-chan pulsar.Cons
 
 	buckets := make([]*stats, 0)
 
-	buckets = append(buckets, getStats(100))
-	buckets = append(buckets, getStats(250))
 	buckets = append(buckets, getStats(500))
 	buckets = append(buckets, getStats(1000))
 	buckets = append(buckets, getStats(2500))
